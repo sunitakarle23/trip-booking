@@ -1,0 +1,18 @@
+<div class="detail-wrapper" *ngIf="flightResults?.length">
+    <div *ngIf="!sharingService.isSidebarOpen  else showSideBar">
+        <div *ngFor="let flightInfo of flightResults; trackBy: trackResult" class="flight-details">
+            <app-flight-details [flightDetails]="flightInfo"></app-flight-details>
+        </div>
+        <div class="filter-wrapper">
+            <button (click)="onSortClick()">Sort by</button>
+            <button (click)="onFilterClick()">Filter by</button>
+        </div>
+    </div>
+    <ng-template #showSideBar>
+        <app-sort-by (onSortBy)="onSortFlightResult($event)" *ngIf="isSortByClick else showFilter"></app-sort-by>
+        <ng-template #showFilter>
+            <app-filter-by (onApplyFilter)="applyFilter($event)"></app-filter-by>
+        </ng-template>
+    </ng-template>
+
+</div>

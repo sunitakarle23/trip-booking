@@ -1,0 +1,109 @@
+<form [formGroup]="flightSearchForm" class="Search-container" aria-describedby="Flight search form">
+  <div class="form-group">
+    <fieldset>
+      <legend>Departure</legend>
+      <select formControlName="departure" id="departure">
+        <option value="" disabled selected>Select Departure</option>
+        <option *ngFor="let option of departureOptions" [value]="option.code">{{ option.city }} ({{option.code}})
+        </option>
+      </select>
+    </fieldset>
+
+    <div *ngIf="flightSearchForm.get('departure')?.errors && flightSearchForm.get('departure')?.touched"
+      class="error-message">
+      Departure is required
+    </div>
+  </div>
+
+  <div class="form-group">
+    <fieldset>
+      <legend>Destination</legend>
+      <select formControlName="destination" id="destination">
+        <option value="" disabled selected>Select Destination</option>
+        <option *ngFor="let option of destinationOptions" [value]="option.code">{{ option.city }} ({{option.code}})
+        </option>
+      </select>
+    </fieldset>
+
+    <div *ngIf="flightSearchForm.get('destination')?.errors && flightSearchForm.get('destination')?.touched"
+      class="error-message">
+      Destination is required
+    </div>
+  </div>
+
+  <div class="Search-container2">
+
+    <div class="form-group">
+
+      <fieldset>
+        <legend>Depart Date</legend>
+        <input type="date" formControlName="departureDate" id="departureDate" class="custom-input">
+      </fieldset>
+      <div *ngIf="flightSearchForm.get('departureDate')?.errors && flightSearchForm.get('departureDate')?.touched"
+        class="error-message">
+        Departure date is required
+      </div>
+      <div *ngIf="flightSearchForm.get('departureDate')?.errors?.invalidDate" class="error-message">Invalid date.
+      </div>
+      <div *ngIf="flightSearchForm.get('departureDate')?.errors?.maxDateExceeded" class="error-message">Date exceeds
+        maximum allowed date.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <fieldset>
+        <legend>Return Date</legend>
+        <input type="date" formControlName="returnDate" id="returnDate">
+      </fieldset>
+      <div *ngIf="flightSearchForm.get('returnDate')?.errors && flightSearchForm.get('returnDate')?.touched"
+        class="error-message">
+        Return date is required
+      </div>
+      <div *ngIf="flightSearchForm.get('returnDate')?.errors?.invalidDate" class="error-message">Invalid date.</div>
+      <div *ngIf="flightSearchForm.get('returnDate')?.errors?.maxDateExceeded" class="error-message">Date exceeds
+        maximum allowed date.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="Search-container2">
+    <div class="form-group">
+
+      <fieldset>
+        <legend>Travelers</legend>
+        <select formControlName="travelers" id="travelers">
+          <option value="" disabled selected>Select Number of Travelers</option>
+          <option *ngFor="let option of travelerOptions" [value]="option">{{ option }}</option>
+        </select>
+      </fieldset>
+
+      <div *ngIf="flightSearchForm.get('travelers')?.errors && flightSearchForm.get('travelers')?.touched"
+        class="error-message">
+        Number of travelers is required
+      </div>
+    </div>
+
+    <div class="form-group ">
+      <fieldset>
+        <legend>Class</legend>
+        <select formControlName="flightClass" id="flightClass">
+          <option value="" disabled selected>Select Class</option>
+          <option *ngFor="let option of fareOptions" [value]="option">{{ option }}</option>
+        </select>
+      </fieldset>
+
+    </div>
+    <div *ngIf="flightSearchForm.get('flightClass')?.errors && flightSearchForm.get('flightClass')?.touched"
+      class="error-message">
+      Class is required
+    </div>
+  </div>
+
+
+  <p>
+    <button type="button" class="search-flight-button"
+      [disabled]="flightSearchForm.invalid || flightSearchForm.untouched" (click)="searchFlight()">Search
+      flights</button>
+  </p>
+</form>

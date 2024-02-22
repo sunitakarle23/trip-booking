@@ -1,0 +1,21 @@
+<div class="flight-details" *ngFor="let segment of flightDetails?.segments">
+    <div class="item1"> <span> <img src="../../../../assets/logo.png" alt="" srcset="" class="logo"
+                ></span> {{flightDetails.company}}</div>
+
+    <div class="item2">
+        <div class="box">
+            <p>{{segment.departureTime | formatDate}}</p>
+            <p>{{segment.origin | uppercase}}</p>
+        </div>
+        <div class="box">
+            <p>{{segment.duration | formatTime}}</p>
+            <hr />
+            <p>{{segment.noOfStops}} Stops</p>
+        </div>
+        <div class="box">
+            <p>{{segment.arrivalTime | formatDate}}</p>
+            <p>{{segment.destination| uppercase}}</p>
+        </div>
+    </div>
+    <app-flight-class [flightDetails]="flightDetails"></app-flight-class>
+</div>

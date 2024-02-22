@@ -1,0 +1,17 @@
+<form #filterForm="ngForm" aria-label="Filter result by Price & Fare options" class="filterby" (submit)="applyFilter(filterForm)">
+    <label class="item">
+        <h4>Booking Class</h4>
+    </label>
+    <label class="item" for="economyClass">
+        <input type="checkbox" value="Economy" name="economyClass" [(ngModel)]="economyClass"> Economy
+    </label>
+    <label class="item" for="firstClass">
+        <input type="checkbox" value="First class" name="firstClass" [(ngModel)]="firstClass"> First class
+    </label>
+    <label class="item">
+        <footer>
+            <button type="button" (click)="filterForm.reset();" class="search-flight-button">Reset All</button> &nbsp;
+            <button type="submit" class="search-flight-button">Apply</button>
+        </footer>
+    </label>
+</form>

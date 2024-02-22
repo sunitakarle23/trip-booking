@@ -1,0 +1,8 @@
+<div class="fare-options" >
+    <div class="box fare-item" *ngFor="let segment of flightDetails?.fareOptions">
+        <span class="badge" *ngIf="segment.seatsAvailable">{{segment.seatsAvailable}} Seats left</span>
+        <p>{{segment.fareValue | currency}}</p>
+        <p>{{segment.name}}</p> 
+    </div>
+</div>
+

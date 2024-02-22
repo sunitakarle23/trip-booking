@@ -1,0 +1,37 @@
+@import '../../../../assets/variables';
+.fare-options {
+  display:flex;
+  margin-top: 10px;
+
+
+  .fare-item {
+    flex-grow: 1;
+    margin: 3px;
+    background-color: $color_blue_1;
+    color: $color_white;
+    padding: 3px;
+    border-radius: 5px;
+    align-content: end;
+    border: 1px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @media only screen and (min-width: 768px) {
+    }
+  }
+  
+}
+  
+  
+
+.badge {
+    background-color: $color_yellow;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: -15px;
+    width: auto;
+    font-size: 12px;
+    left: 36px;
+    color: $color_brown;
+    padding: 2px 5px;
+  }
+  

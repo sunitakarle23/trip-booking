@@ -1,0 +1,42 @@
+<div class="ng-container" *ngIf="!isResultPage else resultPage">
+    <div class="header">
+        <div class="item">
+            <a class="button navbar-toggler" (click)="toggleMenu()" role="button"> <i class="fa fa-bars"></i></a>
+        </div>
+        <div class="item2">
+            <div class="navbar-brand">
+                <h1><span class="logo-opacity">cx</span><span style="font-size: 25px; color: white;">Loyalty</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <div class="item">
+            <app-tab></app-tab>
+        </div>
+    </div>
+</div>
+
+<ng-template #resultPage>
+    <div class="sec-header" *ngIf="lastSearch">
+        <div class="item">
+            <a name="back" aria-label="Go back" (click)="onBackButtonClick()">
+                <i class="fa fa-arrow-left"></i> 
+            </a>
+        </div>
+        <div class="item" *ngIf="!filterLabel else showFilterLabel">
+            <p class="center">{{lastSearch.departure | uppercase}} <i class="fa fa-arrow-right"></i>
+                {{lastSearch.destination | uppercase}}</p>
+            <span>{{lastSearch.departureDate | date }} - {{lastSearch.returnDate | date}}</span> |
+            <span>{{lastSearch.travelers }}</span>
+        </div>
+        <div class="item">
+            <a name="edit" aria-label="Edit search" (click)="onBackButtonClick()">
+                <i class="fa fa-pencil"></i> 
+            </a>
+        </div>
+        <ng-template #showFilterLabel>
+            <h2 class="center">{{filterLabel === 'sortBY' ? 'Sort By' : 'Filter By' }} </h2>
+        </ng-template>
+    </div>
+</ng-template>

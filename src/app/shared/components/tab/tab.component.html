@@ -1,0 +1,14 @@
+<div role="tablist" class="navbar">
+    <ng-container *ngFor="let tab of tabs; let i = index;" class="tab-container">
+        <a class="tab" 
+           tabindex = "{{i + 1}}"
+           [routerLink]="tab.redirectPath" 
+           [routerLinkActive]="tab.isActive ? 'router-link-active': ''"
+           role="tab"
+           
+           [attr.aria-selected]="tab.isActive ? 'true' : 'false'">
+            <i class="{{tab.icon}}"></i>
+            {{tab.name}}
+        </a>
+    </ng-container>
+</div>

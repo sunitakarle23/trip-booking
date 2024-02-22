@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/variables.scss';
+
+* {
+    margin: 0px;
+    padding: 0;
+    font-size: 14px;
+  } 
+
+  .center{
+    text-align: center;
+}
+
+.search-flight-button {
+  width: 100%;
+  padding: 10px;
+  background-color: $color_green; 
+  color: $color_white; 
+  text-align: center; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}

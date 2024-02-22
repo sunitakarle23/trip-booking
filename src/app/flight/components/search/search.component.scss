@@ -1,0 +1,44 @@
+
+@import './../../../../assets/variables.scss';
+:host {
+    fieldset:has(> .custom-input.ng-invalid) {
+        border: 1px solid $color_red;
+    }
+    .error-message {
+        color: $color_red;
+    }
+}
+
+.Search-container {
+    display: flex;
+    flex-direction: column; 
+    margin: 5px;
+}
+
+.Search-container2 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1; 
+    margin: 5px;
+}
+
+.input-control {
+    margin: 5px 0; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+fieldset {
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+select{
+    width: 100%;
+    font-size: 14px;
+}
+

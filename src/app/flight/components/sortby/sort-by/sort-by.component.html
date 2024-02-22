@@ -1,0 +1,12 @@
+<div class="sort-options-wrapper">
+
+  <div class="item" *ngFor="let option of sortOptions" aria-label="Sort flight result by price, duration and airline">
+    <input type="radio" [(ngModel)]="selectedOption" name="{{option.label}}" [value]="option.value"
+      [checked]="option.value === selectedOption" /> &nbsp;  &nbsp; <label for="{{option.label}}">{{option.label}}</label>
+  </div>
+
+  <div class="item">
+    <button (click)="confirmSortOption()" aria-label="Click to sort result" class="search-flight-button">Done</button>
+  </div>
+
+</div>

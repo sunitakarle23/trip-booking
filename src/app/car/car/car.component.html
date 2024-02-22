@@ -1,0 +1,42 @@
+<h1>Car Booking Form</h1>
+  <form action="submit.php" method="post">
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Booking Details</legend>
+      <label for="pickup">Pick-up Date:</label>
+      <input type="date" id="pickup" name="pickup" required>
+
+      <label for="return">Return Date:</label>
+      <input type="date" id="return" name="return" required>
+
+      <label for="car-type">Car Type:</label>
+      <select id="car-type" name="car-type" required>
+        <option value="">Select Car Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="hatchback">Hatchback</option>
+      </select>
+
+      <label for="extras">Extras:</label>
+      <input type="checkbox" id="gps" name="extras" value="gps">
+      <label for="gps">GPS</label>
+      <input type="checkbox" id="child-seat" name="extras" value="child-seat">
+      <label for="child-seat">Child Seat</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>

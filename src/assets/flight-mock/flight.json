@@ -1,0 +1,304 @@
+[
+  {
+    "id": "fc704c16fd79",
+    "company": "US Airlines",
+    "points": 25000,
+    "duration": 590,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Las Vegas NV",
+    "destinationCityCode": "LAS",
+    "travelers": ["1 Adult"],
+    "fareOptions": [
+      {
+        "name": "Basic Economy",
+        "seatsAvailable": 2,
+        "fareValue": 125
+      },
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 6,
+        "fareValue": 325
+      },
+      {
+        "name": "First class",
+        "seatsAvailable": 0,
+        "fareValue": 325
+      }
+    ],
+    "segments": [
+      {
+        "duration": 590,
+        "departureTime": "2016-10-10T21:30-03:00",
+        "arrivalTime": "2016-10-11T06:20-04:00",
+        "origin": "LAS",
+        "destination": "JFK",
+        "noOfStops": 2
+      }
+    ]
+  },
+  {
+    "id": "3fe21e46fd78",
+    "company": "Dalta",
+    "points": 20000,
+    "duration": 862,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "London",
+    "destinationCityCode": "LGW",
+    "travelers": ["2 Adult", "2 child"],
+    "fareOptions": [
+      {
+        "name": "Basic Economy",
+        "seatsAvailable": 0,
+        "fareValue": 175
+      },
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 4,
+        "fareValue": 340
+      }
+    ],
+    "segments": [
+      {
+        "duration": 635,
+        "departureTime": "2016-10-16T20:25-03:00",
+        "arrivalTime": "2016-10-17T06:00-04:00",
+        "origin": "JFK",
+        "destination": "LGW",
+        "connectionDuration": 125,
+        "noOfStops": 1
+      },
+      {
+        "duration": 102,
+        "departureTime": "2016-10-17T08:05-04:00",
+        "arrivalTime": "2016-10-17T09:47-04:00",
+        "origin": "LGW",
+        "destination": "JFK",
+        "noOfStops": 2
+      }
+    ]
+  },
+  {
+    "id": "8bf2b3d7be09",
+    "company": "Aviana",
+    "points": 17000,
+    "duration": 1050,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Miami FL",
+    "destinationCityCode": "MIA",
+    "travelers": ["1 Adult", "2 child"],
+    "fareOptions": [
+      {
+        "name": "Basic Economy",
+        "seatsAvailable": 0,
+        "fareValue": 175
+      },
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 4,
+        "fareValue": 340
+      }
+    ],
+    "segments": [
+      {
+        "duration": 515,
+        "departureTime": "2016-10-10T21:25-03:00",
+        "arrivalTime": "2016-10-11T05:00-04:00",
+        "origin": "GRU",
+        "destination": "MIA",
+        "connectionDuration": 145,
+        "noOfStops": 1
+      },
+      {
+        "duration": 192,
+        "departureTime": "2016-10-11T07:25-04:00",
+        "arrivalTime": "2016-10-11T10:37-04:00",
+        "origin": "MIA",
+        "destination": "JFK",
+        "connectionDuration": 98,
+        "noOfStops": 0
+      },
+      {
+        "duration": 100,
+        "departureTime": "2016-10-11T12:15-04:00",
+        "arrivalTime": "2016-10-11T13:55-04:00",
+        "origin": "JFK",
+        "destination": "MIA",
+        "noOfStops": 4
+      }
+    ]
+  },
+  {
+    "id": "hg704c16fd79",
+    "company": "US Airlines",
+    "points": 25000,
+    "duration": 590,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Las Vegas NV",
+    "destinationCityCode": "LAS",
+    "travelers": ["3 Adult"],
+    "fareOptions": [
+      {
+        "name": "Basic Economy",
+        "seatsAvailable": 2,
+        "fareValue": 345
+      },
+      {
+        "name": "First class",
+        "seatsAvailable": 1,
+        "fareValue": 567
+      }
+    ],
+    "segments": [
+      {
+        "duration": 590,
+        "departureTime": "2016-10-10T21:30-03:00",
+        "arrivalTime": "2016-10-11T06:20-04:00",
+        "origin": "LAS",
+        "destination": "JFK",
+        "noOfStops": 1
+      }
+    ]
+  },
+  {
+    "id": "fc704c16fd56",
+    "company": "US Airlines",
+    "points": 25000,
+    "duration": 590,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Las Vegas NV",
+    "destinationCityCode": "LAS",
+    "travelers": ["2 Adult"],
+    "fareOptions": [
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 6,
+        "fareValue": 300
+      },
+      {
+        "name": "First class",
+        "seatsAvailable": 0,
+        "fareValue": 425
+      }
+    ],
+    "segments": [
+      {
+        "duration": 590,
+        "departureTime": "2016-10-10T21:30-03:00",
+        "arrivalTime": "2016-10-11T06:20-04:00",
+        "origin": "LAS",
+        "destination": "JFK",
+        "noOfStops": 2
+      }
+    ]
+  },
+  {
+    "id": "fc704c19fd79",
+    "company": "US Airlines",
+    "points": 25000,
+    "duration": 590,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Las Vegas NV",
+    "destinationCityCode": "LAS",
+    "travelers": ["1 Adult"],
+    "fareOptions": [
+      {
+        "name": "Basic Economy",
+        "seatsAvailable": 2,
+        "fareValue": 100
+      },
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 6,
+        "fareValue": 300
+      },
+      {
+        "name": "First class",
+        "seatsAvailable": 0,
+        "fareValue": 325
+      }
+    ],
+    "segments": [
+      {
+        "duration": 590,
+        "departureTime": "2016-10-10T21:30-03:00",
+        "arrivalTime": "2016-10-11T06:20-04:00",
+        "origin": "LAS",
+        "destination": "JFK",
+        "noOfStops": 2
+      }
+    ]
+  },
+  {
+    "id": "fc704c46fd79",
+    "company": "US Airlines",
+    "points": 25000,
+    "duration": 567,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Las Vegas NV",
+    "destinationCityCode": "LAS",
+    "travelers": ["2 Adult"],
+    "fareOptions": [
+      {
+        "name": "Basic Economy",
+        "seatsAvailable": 2,
+        "fareValue": 125
+      },
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 6,
+        "fareValue": 325
+      }
+    ],
+    "segments": [
+      {
+        "duration": 234,
+        "departureTime": "2016-10-10T21:30-03:00",
+        "arrivalTime": "2016-10-11T06:20-04:00",
+        "origin": "LAS",
+        "destination": "JFK",
+        "noOfStops": 4
+      }
+    ]
+  },
+  {
+    "id": "fc704c56fd79",
+    "company": "US Airlines",
+    "points": 25000,
+    "duration": 200,
+    "departureCity": "New York NY",
+    "departureCityCode": "JFK",
+    "destinationCity": "Las Vegas NV",
+    "destinationCityCode": "LAS",
+    "travelers": ["1 Adult"],
+    "fareOptions": [
+      {
+        "name": "Main cabin",
+        "seatsAvailable": 6,
+        "fareValue": 225
+      },
+      {
+        "name": "First class",
+        "seatsAvailable": 0,
+        "fareValue": 300
+      }
+    ],
+    "segments": [
+      {
+        "duration": 190,
+        "departureTime": "2016-10-10T21:30-03:00",
+        "arrivalTime": "2016-10-11T06:20-04:00",
+        "origin": "LAS",
+        "destination": "JFK",
+        "noOfStops": 1
+      }
+    ]
+  }
+  
+]

@@ -1,0 +1,49 @@
+@import '../../../../assets/variables';
+
+.flight-details {
+  max-width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .item2,
+  .item3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+
+.bg-color1 {
+  margin-top: 5px;
+  background-color: $color_blue_1;
+  color: $color_white;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  background-color: $color_yellow;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  top: -15px;
+  width: auto;
+  font-size: 12px;
+  left: 36px;
+  color: $color_red;
+  padding: 2px 5px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+}
